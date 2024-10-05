@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import React from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div className="relative w-full bg-white">
-      <div className="flex justify-between md:justify-around items-center px-6 py-4 h-20 select-none font-montserrat">
+      <div className="flex justify-between md:justify-around items-center px-8 py-4 h-20 select-none font-montserrat">
         <div
           className="text-3xl font-bold"
         >
@@ -52,11 +53,11 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`absolute top-16 left-0 w-full bg-white shadow-lg md:hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-16 left-0 w-screen flex justify-center bg-white shadow-lg md:hidden transition-all duration-300 ease-in-out ${
           isOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col gap-4 p-4">
+        <ul className="flex flex-col gap-4 p-4 items-center">
           <li className={menuStyle} onClick={() => scrollToSection("about")}>
             About
           </li>

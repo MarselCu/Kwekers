@@ -14,6 +14,9 @@ const Home = () => {
       <Experience id="experience" />
       <Project id="project" />
       <Contact id="contact" />
+      <div className="relative bottom-0 left-0 p-4 text-xs">
+        © 2024 Marchel. All rights reserved.
+      </div>
     </div>
   );
 };

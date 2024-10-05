@@ -1,11 +1,12 @@
+
 const About = ({ id }) => {
   return (
     <section
       id={id}
-      className="relative flex flex-col items-center justify-start h-screen font-montserrat" // Ubah justify-center ke justify-start
+      className="relative flex flex-col items-center justify-start min-h-screen font-montserrat"
     >
-      <div className="w-4/5 mx-auto text-center mt-20">
-        <header className="mb-20">
+      <div className="w-4/5 mx-auto text-center md:mt-20">
+        <header className="mb-5 md:mb-20">
           <h2 className="text-lg text-gray-500">Get to know more</h2>
           <h1 className="text-4xl font-bold">About Me</h1>
         </header>
@@ -14,7 +15,7 @@ const About = ({ id }) => {
             <img
               src="/images/about-pic.png"
               alt="Profile"
-              className="rounded-3xl w-80 h-80 object-cover" // Ganti dengan ukuran yang lebih besar
+              className="rounded-3xl w-60 h-60 md:w-80 md:h-80 object-cover" // Ganti dengan ukuran yang lebih besar
             />
           </div>
           <div className="w-full md:w-2/3">
@@ -42,13 +43,12 @@ const About = ({ id }) => {
             </div>
             <article className="mt-6 text-left">
               <p className="text-left break-words">
-              I’m an Information Technology student with a passion for technology and its potential to solve real-world problems. I enjoy exploring new developments in the field and continuously learning to enhance my skills. I thrive on challenges and look forward to contributing to innovative projects.
+                Im an Information Technology student with a passion for technology and its potential to solve real-world problems. I enjoy exploring new developments in the field and continuously learning to enhance my skills. I thrive on challenges and look forward to contributing to innovative projects.
               </p>
             </article>
           </div>
         </div>
       </div>
-      
     </section>
   );
 };
