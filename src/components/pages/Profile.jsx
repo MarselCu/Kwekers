@@ -1,6 +1,6 @@
 import { saveAs } from "file-saver";
 import Button from "../elements/button/Button";
-
+import { scrollToSection } from "../elements/navbar/Navbar";
 
 const Profile = ({ id }) => {
 
@@ -24,7 +24,7 @@ const Profile = ({ id }) => {
           <div className="text-2xl font-semibold text-zinc-600">Frontend Developer</div>
           <div className="flex justify-between gap-2 pt-2">
             <Button text="Download CV" variant="outline" onClick={downloadCV}/>
-            <Button text="Contact Me" />
+            <Button text="Contact Me" onClick={() => scrollToSection("contact")}/>
           </div>
           <div className="flex justify-between gap-5 pt-2">
              <a href="https://www.linkedin.com/in/marchel-dev/" target="_blank" rel="noopener noreferrer" >

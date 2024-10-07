@@ -2,19 +2,21 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import React from "react";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const menuStyle =
-    "cursor-pointer text-lg transform hover:scale-110 hover:text-slate-500 font-medium transition-transform duration-300 ease-in-out";
-
-  const scrollToSection = (sectionId) => {
+export const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
     setIsOpen(false);
   };
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const menuStyle =
+    "cursor-pointer text-lg transform hover:scale-110 hover:text-slate-500 font-medium transition-transform duration-300 ease-in-out";
+
+  
   
   const toggleMenu = () => {
     setIsOpen(!isOpen);
