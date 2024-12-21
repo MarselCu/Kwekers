@@ -10,7 +10,7 @@ Welcome to my GitHub profile! I'm a passionate developer mainly focused on web d
 
 ## 📫 How to reach me
 
-Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/marchel-dev/) or via email at marchel@example.com.
+Feel free to contact me on [LinkedIn](https://www.linkedin.com/in/marchel-dev/)
 
 ---
 
